@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --Lexend: 'Lexend', sans-serif;
+    --primary-color: #0087A0;
+    --primary-two-color: #76C893;
+    --secondary-color: #FFA92C;
+    --secondary-two-color: #FFC570;
+    --black-color: #223344;
+    --bg-color: #FCFEFE;
+    --border-light: #EFF4FB;
+	--p-color: #777777;
+    --white: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--Lexend);
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--Lexend);
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0 !important;
+}
+.fw-300{
+	font-weight: 300;
+}
+.fw-500{
+	font-weight: 500;
+}
+.fw-600{
+	font-weight: 600;
+}
+.fw-700{
+	font-weight: 700;
+}
+
+/* common class */
+.common-btn{
+	padding: 1.8rem 3.5rem;
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	background-color: var(--primary-color);
+}
+.common-btn:hover{
+	background-color: var(--primary-two-color);
+}
+/* common css end */
+#login .input-pass-container input {
+	width: 100%;
+	padding-left: 3rem;
+	color: var(--p-color);
+	transition: .6s;
+}
+#login .input-pass-container input:hover {
+	border: 1px solid var(--primary-color);
+}
+#login .input-pass-container .fa-lock,.fa-user,.fa-envelope,.fa-phone {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	transform: translateY(-50%);
+	color: var(--p-color);
+}
+
+#login .login_orafter {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: var(--secondary-color);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+#login .login_orafter::before,
+#login .login_orafter::after {
+	content: "";
+	flex: 1;
+	border-bottom: 0.1rem solid #D9D9D9;
+}
+
+#login .login_orafter:not(:empty)::before {
+	margin-right: 0.25rem;
+}
+
+#login .login_orafter:not(:empty)::after {
+	margin-left: 0.25rem;
+}
+#login .google_btn{
+	background-color: #4285F4;
+}
+#login .google_icon {
+	width: 3rem;
+}
+#login .google_icon_main {
+	background: white;
+	padding: 1.5rem;
+}
+#login .google_icon_main {
+	background: white;
+	padding: 1.1rem;
+	position: absolute;
+	top: 50%;
+	left: 0.3rem;
+	transform: translateY(-50%);
+}
+#login .sign_up_button {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	color: var(--primary-color);
+}
+#login {
+	background: #FFEDEB;
+	
+}
+.login_form {
+	background: white;
+	padding: 4rem 5rem;
+	
+}
+.login_position_img {
+	position: absolute;
+	top: 0;
+	width: 10rem;
+	right: 0;
+}
+.signUp{
+	background-color: #0088a02d !important;
+}
+.google_btn:hover{
+	background-color: var(--primary-color) !important;
+}
+#form input{
+	font-size: 1.4rem;
+	padding: 1rem;
+	
+}
+
