@@ -64,8 +64,8 @@ p {
 }
 
 /* common class */
-.common-btn{
-	padding: 1.8rem 3.5rem;
+.common-btn {
+	padding: 1.2rem 3.5rem;
 	font-size: 1.5rem;
 	line-height: 2.2rem;
 	background-color: var(--primary-color);
@@ -98,7 +98,7 @@ p {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 }
 
 #login .login_orafter::before,
@@ -134,7 +134,7 @@ p {
 	transform: translateY(-50%);
 }
 #login .sign_up_button {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	line-height: 2.8rem;
 	color: var(--primary-color);
 }
