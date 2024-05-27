@@ -226,11 +226,11 @@ p {
 	padding: 1rem 0;
 	border-radius: .5rem;
 }
-.common_btn button {
+.common_btn a {
 	background: var(--secondary-color);
 	font-size: 1.4rem;
 }
-.common_btn button:hover{
+.common_btn a:hover{
 	background-color: var(--primary-color);
 }
 .profile_chart {
