@@ -16,6 +16,7 @@
     --border-light: #EFF4FB;
 	--p-color: #777777;
     --white: white;
+    --red: #FF4545;
 }
 
 html {
@@ -26,6 +27,7 @@ body {
     font-family: var(--Lexend);
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
+	background-color: #DFF1F4;
 }
 img{
     width: 100%;
@@ -41,6 +43,9 @@ h6 {
 }
 a{
     text-decoration: none;
+}
+li{
+	list-style: none;
 }
 p {
     margin-bottom: 0 !important;
@@ -61,7 +66,7 @@ p {
 /* common class */
 .common-btn{
 	padding: 1.8rem 3.5rem;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	line-height: 2.2rem;
 	background-color: var(--primary-color);
 }
@@ -159,4 +164,248 @@ p {
 	padding: 1rem;
 	
 }
+/* dasboard css start */
+#dashboard_header{
+	background-color: var(--primary-color);
+}
+#navbarSupportedContent .nav-link{
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	color: var(--white);
+}
+.image_dropdown_toggle::after{
+	display: none !important;
+}
+.header_serach_bar i {
+	font-size: 14px;
+	margin-right: .8rem;
+	color: var(--p-color);
+}
+.header_serach_bar {
+	display: flex;
+	align-items: center;
+	background: var(--white);
+	padding: 1rem 2rem;
+	border-radius: 5rem;
+}
+.nav-link.active {
+	background: var(--secondary-color);
+	border-radius: .5rem;
+}
+.image_dropdown img {
+	width: 30px !important;
+	border-radius: 50%;
+}
 
+#dashboard_section{
+	padding: 4rem 0;
+}
+.profile_main img {
+	width: 12rem;
+}
+.profile_main i {
+	position: absolute;
+	background: var(--secondary-color);
+	font-size: 1.4rem;
+	padding: .8rem;
+	border-radius: 5rem;
+	color: white;
+	right: 50%;
+	transform: translateX(195%);
+}
+.profile_heading h4{
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	color: var(--black-color);
+}
+.beginner_option {
+	font-size: 1.4rem;
+	border: .1rem solid var(--primary-color);
+	color: var(--primary-color);
+	background: white;
+	padding: 1rem 0;
+	border-radius: .5rem;
+}
+.common_btn button {
+	background: var(--secondary-color);
+	font-size: 1.4rem;
+}
+.common_btn button:hover{
+	background-color: var(--primary-color);
+}
+.profile_chart {
+	border: .1rem solid var(--border-light);
+	padding: 1.5rem;
+	border-radius: .5rem;
+}
+.profile_chart h5{
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	text-align: left !important;
+}
+.common_box_icon i {
+	font-size: 1.9rem;
+	background: #0088a034;
+	color: var(--primary-color);
+	padding: 1.5rem;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+}
+.sim_card_icon i {
+	background: #ff906b33;
+	color: #FF8F6B;
+}
+.sim_clock_icon i {
+	background: #7955f04b;
+	color: #7855F0;
+}
+.sim_card_heading {
+	color: #FF8F6B !important;
+}
+.sim_clock_heading {
+	color: #7855F0 !important;
+}
+.widget-item h2{
+	font-size: 3.2rem;
+	line-height: 4.2rem;
+	color: var(--primary-color);
+}
+.widget-item p{
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: var(--p-color);
+}
+
+.profile_view_chart_heading h5{
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	color: var(--black-color);
+}
+#flexSwitchCheckChecked {
+	font-size: 1.5rem;
+	color: var(--p-color);
+}
+.progress_bar_heading p{
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	color: var(--black-color);
+}
+.progress {
+	background: var(--border-light);
+}
+.common_box h4 {
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	background-color: var(--secondary-color);
+}
+.common_box_two h4 {
+	background-color: var(--primary-color);
+}
+.feature_lesson_box h4 {
+	background-color: #FEEFEE;
+	color: var(--red);
+}
+.common_box_heading p{
+	font-size: 1.5rem;
+	line-height: 2.3rem;
+	color: var(--p-color);
+}
+.common_box_heading h5{
+	font-size: 1.7rem;
+	line-height: 2.7rem;
+	color: var(--black-color);
+}
+.audio_box {
+	font-size: 1.5rem;
+	line-height: 2.6rem;
+	color: var(--primary-color);
+}
+.feature_lesson_video_icon i{
+	color: var(--secondary-color);
+}
+.duration_box {
+	font-size: 1.5rem;
+	line-height: 2.6rem;
+	color: var(--red);
+}
+.progress_lesson_btn{
+	background-color: var(--secondary-color);
+	border: .2rem solid var(--secondary-color);
+	transition: ease-in-out .6s;
+}
+.progress_lesson_btn:hover{
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+.progress_complete_btn{
+	border: .2rem solid var(--primary-color);
+	color: var(--black-color);
+	transition: ease-in-out .6s;
+}
+.progress_complete_btn:hover{
+	background-color: var(--primary-color) !important;
+	border-color: var(--primary-color);
+	color: var(--white);
+}
+.progress_bar_main{
+	background: linear-gradient(to bottom, #FFFFFF, #FFF4E5);
+	border: .1rem solid #FFF4E5;
+}
+.progress_bar_main_level2{
+	background: #0088a01c;
+	border: .1rem solid #FFF4E5;
+}
+.progress-bar {
+	background: var(--secondary-color);
+}
+.progress_bar_level2{
+	background: var(--primary-color);
+}
+.feature_lesson_time_box{
+	border-top: .1rem solid var(--border-light);
+	border-bottom: .1rem solid var(--border-light);
+}
+.feature_lesson_box_main{
+	border: .1rem solid var(--border-light);
+	padding: 2.6rem;
+}
+.feature_lesson_box_main:hover{
+	border-color: var(--secondary-two-color);
+}
+.featured_btn{
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+.feature_vocabulary h4{
+	font-size: 1.6rem;
+	background-color: #0088a01e;
+	color: #0087A0;
+}
+.feature_vocabulary_btn{
+	text-align: end;
+}
+.vocabulary_btn_color{
+	color: var(--secondary-color);
+}
+.feature_vocabulary_heading h5{
+	font-size: 1.5rem;
+}
+
+/* dasboard css end */
+/* footer css start */
+#footer_section{
+	background-color: var(--primary-color);
+}
+#footer_section .footer_heading p{
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+	color: var(--black-color);
+}
+#footer_section .footer_heading span{
+	color: var(--secondary-color);
+}
+.footer_page{
+	text-align: end;
+}
+/* footer css end */

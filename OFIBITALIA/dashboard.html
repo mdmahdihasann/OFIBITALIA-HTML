@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header id="dashboard_header" class="dashboard_header py-3">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid" style="width: 90%;">
+                  <a class="navbar-brand" href="#" style="width: 15%;"><img src="./img/logo/dashboard_logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 my-0 gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link active fw-600" aria-current="page" href="#"><i class="fa-solid fa-gauge me-2"></i>DASHBOARD</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-600" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-graduate me-2"></i>
+                          LESSONS
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-600" href="#">Action</a></li>
+                          <li><a class="dropdown-item fw-600" href="#">Another action</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-600" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open me-2"></i>
+                          VOCABULARY
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-600" href="#">Action</a></li>
+                          <li><a class="dropdown-item fw-600" href="#">Another action</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-600" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-person-chalkboard me-2"></i>
+                          MY TEACHER
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-600" href="#">Action</a></li>
+                          <li><a class="dropdown-item fw-600" href="#">Another action</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-600" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                          MORE
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-600" href="#">Action</a></li>
+                          <li><a class="dropdown-item fw-600" href="#">Another action</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="header_serach_bar" id="header_serach_bar">
+                      <input class="form-control border-0 bg-light rounded-5 py-2 me-2" type="search" placeholder="Search" aria-label="Search">
+                      <i class="fa-regular fa-bell"></i>
+                      <i class="fa-solid fa-moon"></i>
+                      <i class="fa-regular fa-calendar-days"></i>
+                      <div class="image_dropdown">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle image_dropdown_toggle fw-600" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="w-25" src="./img/header/Elipse.png" alt="">
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fw-600" href="#">Action</a></li>
+                            <li><a class="dropdown-item fw-600" href="#">Another action</a></li>
+                          </ul>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>            
+        </header>
+        <main>
+            <section id="dashboard_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="profile_main text-center shadow-sm p-5 mb-5 bg-white rounded">
+                                <div class="profile_img position-relative">
+                                    <img src="./img/dasboard/profile_img.png" alt="">
+                                <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="profile_heading">
+                                    <h4 class="fw-700 py-3">John Deo</h4>
+                                    <select name="Beginner" class="beginner_option mt-2 form-control text-center">
+                                      <option value="Absolute Beginner">Absolute Beginner</option>
+                                      <option value="Absolute Beginner">Absolute </option>
+                                      <option value="Absolute Beginner">Absolute Beginner</option>
+                                    </select>
+                                </div>
+                                <div class="common_btn mt-3">
+                                  <button type="submit" class="btn btn-sm py-3 fw-600 w-100 text-white">View My Account</button>
+                                </div>
+                                <div class="profile_chart mt-5">
+                                  <h5 class="fw-600 text-black">Performance</h5>
+                                  <canvas id="myChart" width="400" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="common_box_main d-flex align-items-center gap-3 shadow-sm p-4 bg-white rounded">
+                                  <div class="common_box_icon">
+                                    <i class="fa-solid fa-book-open-reader rounded-circle"></i>
+                                  </div>
+                                  <div class="widget">
+                                    <div class="widget-item">
+                                        <h2 class="count fw-600">24</h2>
+                                        <p>Lessons
+                                          Complete</p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="common_box_main d-flex align-items-center gap-3 shadow-sm p-4 bg-white rounded">
+                                  <div class="common_box_icon sim_card_icon">
+                                    <i class="fa-solid fa-sim-card rounded-circle"></i>
+                                  </div>
+                                  <div class="widget">
+                                    <div class="widget-item ">
+                                        <h2 class="count fw-600 sim_card_heading">8</h2>
+                                        <p>Flashcards Reviewed</p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="common_box_main d-flex align-items-center gap-3 shadow-sm p-4 bg-white rounded">
+                                  <div class="common_box_icon sim_clock_icon">
+                                    <i class="fa-regular fa-clock rounded-circle"></i>
+                                  </div>
+                                  <div class="widget">
+                                    <div class="widget-item ">
+                                        <h2 class="count fw-600 sim_clock_heading">17</h2>
+                                        <p>Hours Studied</p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                              <div class="shadow-sm p-5 bg-white rounded">
+                                <div class="profile_view_chart_heading mb-4 d-flex justify-content-between align-items-center">
+                                  <h5 class="fw-600">Profile views</h5>
+                                  <a href="#" class="common-btn text-white py-3 px-4 rounded">View My Report</a>
+                                </div>
+                                <canvas id="canvas" height="176"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="shadow-sm p-5 bg-white rounded">
+                          <div class="profile_view_chart_main">
+                            <div class="profile_view_chart_heading profile_chart_responsive mb-4 d-flex justify-content-between align-items-center">
+                              <h5 class="fw-600">My Pathways</h5>
+                              <div class="profile_chart_responsive_pathway d-flex align-items-center gap-5">
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" for="flexSwitchCheckChecked" id="flexSwitchCheckChecked"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>Skip All Assessments</label>
+                                </div>
+                                <a href="#" class="common-btn text-white py-3 px-4 rounded">Browse All Pathways</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="progress_bar_main p-4">
+                            <div class="progress_bar_heading d-flex justify-content-between align-items-center">
+                              <p class="fw-600">Level 1 Italian</p>
+                              <p class="fw-600">4/129 Complete</p>
+                            </div>
+                            <div class="progress" style="height: 5px;">
+                              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col-md-6 col-lg-4 mt-3">
+                                <div class="common_box d-flex align-items-center gap-3">
+                                  <h4 class="fw-600 rounded-circle text-white px-4 py-2">1</h4>
+                                  <div class="common_box_heading">
+                                    <p class="fw-400">Lesson 1</p>
+                                    <h5 class="fw-600">Making Dinner Plans in Italian</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-2 mt-3">
+                                <div class="audio_box">
+                                  <i class="fa-solid fa-headset me-2"></i><span class="text-dark">Type: </span><span class="fw-600">Audio</span>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-lg-2 mt-3">
+                                <div class="duration_box">
+                                  <i class="fa-regular fa-clock me-2"></i><span class="text-dark">Duration: </span><span class="fw-600">12 Minutes</span>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-lg-2 mt-3">
+                                <div class="progress_btn">
+                                  <a href="#" class="common-btn progress_lesson_btn fw-600 rounded px-5 py-4 text-white">Go to Lesson</a>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-lg-2 mt-3">
+                                <div class="progress_btn">
+                                  <a href="#" class="common-btn progress_complete_btn fw-600 bg-transparent rounded px-4 py-4">Mark Complete</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="progress_bar_main progress_bar_main_level2 p-4 mt-4">
+                            <div class="progress_bar_heading d-flex justify-content-between align-items-center">
+                              <p class="fw-600">Level 2 Italian</p>
+                              <p class="fw-600">4/129 Complete</p>
+                            </div>
+                            <div class="progress" style="height: 5px;">
+                              <div class="progress-bar progress_bar_level2 w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col-md-6 col-lg-4 mt-3">
+                                <div class="common_box common_box_two d-flex align-items-center gap-3">
+                                  <h4 class="fw-600 rounded-circle text-white px-4 py-2">2</h4>
+                                  <div class="common_box_heading">
+                                    <p class="fw-400">Lesson 1</p>
+                                    <h5 class="fw-600">Making Dinner Plans in Italian</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-2 mt-3">
+                                <div class="audio_box">
+                                  <i class="fa-solid fa-headset me-2"></i><span class="text-dark">Type: </span><span class="fw-600">Audio</span>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-lg-2 mt-3">
+                                <div class="duration_box">
+                                  <i class="fa-regular fa-clock me-2"></i><span class="text-dark">Duration: </span><span class="fw-600">12 Minutes</span>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-lg-2 mt-3">
+                                <div class="progress_btn">
+                                  <a href="#" class="common-btn progress_lesson_btn fw-600 rounded px-5 py-4 text-white">Go to Lesson</a>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-lg-2 mt-3">
+                                <div class="progress_btn">
+                                  <a href="#" class="common-btn progress_complete_btn fw-600 bg-transparent rounded px-4 py-4">Mark Complete</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-md-12 col-lg-6 mt-3">
+                        <div class="shadow-sm p-5 bg-white rounded">
+                          <div class="profile_view_chart_main">
+                            <div class="profile_view_chart_heading mb-5 d-flex justify-content-between align-items-center">
+                              <h5 class="fw-600">Featured Lessons</h5>
+                              <a href="#" class="fw-600 featured_btn"> <i class="fa-solid fa-circle me-2 fs-6"></i>Browse All</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main mt-3 rounded">
+                            <div class="common_box feature_lesson_box d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-2">1</h4>
+                              <div class="common_box_heading">
+                                <h5 class="fw-600">How to Use Basic Greetings - Dialogue</h5>
+                                <p class="fw-400">Video • Absolute Beginner</p>
+                              </div>
+                            </div>
+                            <div class="feature_lesson_time_box py-4 mt-4 px-2 d-flex align-items-center justify-content-between">
+                              <div class="audio_box">
+                                <i class="fa fa-stopwatch me-2"></i><span class="text-dark">5 mins</span>
+                              </div>
+                              <div class="audio_box feature_lesson_video_icon">
+                                <a href="#"><i class="fa-regular fa-circle-play" aria-hidden="true"></i> <span class="text-dark">Video format</span></a>
+                              </div>
+                            </div>
+                            <div class="feature_lesson_btn mt-5">
+                              <a href="#" class="common-btn progress_lesson_btn fw-600 rounded px-5 py-4 text-white">Get Started</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main mt-3 rounded">
+                            <div class="common_box feature_lesson_box d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-2">2</h4>
+                              <div class="common_box_heading">
+                                <h5 class="fw-600">Introduction to Perfect Italian Pronunciation</h5>
+                                <p class="fw-400">Video • Absolute Beginner</p>
+                              </div>
+                            </div>
+                            <div class="feature_lesson_time_box py-4 mt-4 px-2 d-flex align-items-center justify-content-between">
+                              <div class="audio_box">
+                                <i class="fa fa-stopwatch me-2"></i><span class="text-dark">5 mins</span>
+                              </div>
+                              <div class="audio_box feature_lesson_video_icon">
+                                <a href="#"><i class="fa-regular fa-circle-play" aria-hidden="true"></i> <span class="text-dark">Video format</span></a>
+                              </div>
+                            </div>
+                            <div class="feature_lesson_btn mt-5">
+                              <a href="#" class="common-btn progress_lesson_btn fw-600 rounded px-5 py-4 text-white">Get Started</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-6 mt-3">
+                        <div class="shadow-sm p-5 bg-white rounded">
+                          <div class="profile_view_chart_main">
+                            <div class="profile_view_chart_heading mb-5 d-flex justify-content-between align-items-center">
+                              <h5 class="fw-600">Featured Vocabulary Lists</h5>
+                              <a href="#" class="fw-600 featured_btn vocabulary_btn_color"> <i class="fa-solid fa-circle me-2 fs-6"></i>Browse All</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main feature_vocabulary_box_main p-4 mt-3 d-flex justify-content-between align-items-center rounded">
+                            <div class="common_box feature_vocabulary d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-3">100</h4>
+                              <div class="common_box_heading feature_vocabulary_heading">
+                                <h5 class="fw-600">Italian Core 100 Word List</h5>
+                                <p class="fw-400">101 Words</p>
+                              </div>
+                            </div>
+                            <div class="feature_vocabulary_btn">
+                              <a href="#" class="common-btn progress_complete_btn  fw-600 bg-transparent rounded px-4 py-3">Get Started</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main feature_vocabulary_box_main p-4 mt-3 d-flex justify-content-between align-items-center rounded">
+                            <div class="common_box feature_vocabulary d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-3">10</h4>
+                              <div class="common_box_heading feature_vocabulary_heading">
+                                <h5 class="fw-600">Numbers</h5>
+                                <p class="fw-400">101 Words</p>
+                              </div>
+                            </div>
+                            <div class="feature_vocabulary_btn">
+                              <a href="#" class="common-btn progress_complete_btn  fw-600 bg-transparent rounded px-4 py-3">Get Started</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main feature_vocabulary_box_main p-4 mt-3 d-flex justify-content-between align-items-center rounded">
+                            <div class="common_box feature_vocabulary d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-3">10</h4>
+                              <div class="common_box_heading feature_vocabulary_heading">
+                                <h5 class="fw-600">10 Lines You Need for Introducing <br> Yourself</h5>
+                                <p class="fw-400">101 Words</p>
+                              </div>
+                            </div>
+                            <div class="feature_vocabulary_btn">
+                              <a href="#" class="common-btn progress_complete_btn  fw-600 bg-transparent rounded px-4 py-3">Get Started</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main feature_vocabulary_box_main p-4 mt-3 d-flex justify-content-between align-items-center rounded">
+                            <div class="common_box feature_vocabulary d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-3">100</h4>
+                              <div class="common_box_heading feature_vocabulary_heading">
+                                <h5 class="fw-600">Italian Core 100 Word List</h5>
+                                <p class="fw-400">101 Words</p>
+                              </div>
+                            </div>
+                            <div class="feature_vocabulary_btn">
+                              <a href="#" class="common-btn progress_complete_btn  fw-600 bg-transparent rounded px-4 py-3">Get Started</a>
+                            </div>
+                          </div>
+                          <div class="feature_lesson_box_main feature_vocabulary_box_main p-4 mt-3 d-flex justify-content-between align-items-center rounded">
+                            <div class="common_box feature_vocabulary d-flex align-items-center gap-3">
+                              <h4 class="fw-600 rounded-circle px-4 py-3">100</h4>
+                              <div class="common_box_heading feature_vocabulary_heading">
+                                <h5 class="fw-600">Italian Core 100 Word List</h5>
+                                <p class="fw-400">101 Words</p>
+                              </div>
+                            </div>
+                            <div class="feature_vocabulary_btn">
+                              <a href="#" class="common-btn progress_complete_btn  fw-600 bg-transparent rounded px-4 py-3">Get Started</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer_section" class="footer_section py-3">
+           <div class="container">
+            <div class="row ">
+              <div class="col-md-6">
+                <div class="footer_heading">
+                  <p class="fw-600 text-white"> © Copyright <span>2024</span> All Rights Reserved.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer_heading footer_page">
+                 <p class="fw-600"><a href="#" class="text-white">Terms of Service</a> <span> | </span> <a href="#" class="text-white">Contact Us</a> <span> | </span> <a class="text-white" href="#">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+           </div>
+        </footer>
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          var ctx = document.getElementById('myChart').getContext('2d');
+          var myChart = new Chart(ctx, {
+              type: 'bar', // Specify the chart type
+              data: {
+                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // Labels for the x-axis
+                  datasets: [{
+                      data: [1.2, 2.33, 1.5, 1.8, 2.0, 2.5], // Data for the y-axis
+                      backgroundColor: '#ff906b5e',
+                      borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 0,
+                        bottomRight: 0
+                    },
+                      borderSkipped: false,
+                      hoverBackgroundColor: 'rgba(255, 99, 132, 0.8)',
+                      barThickness: 10
+                  }]
+              },
+              options: {
+                  responsive: true,
+                  plugins: {
+                      tooltip: {
+                          callbacks: {
+                              label: function(context) {
+                                  let label = context.dataset.label || '';
+                                  if (label) {
+                                      label += ': ';
+                                  }
+                                  if (context.parsed.y !== null) {
+                                      label += context.parsed.y + 'k';
+                                  }
+                                  return label;
+                              }
+                          }
+                      }
+                  },
+                  scales: {
+                      y: {
+                          beginAtZero: true
+                      }
+                  }
+              }
+          });
+      </script>
+      <script>
+        $(document).ready(function() {
+        var counters = $(".count");
+        var countersQuantity = counters.length;
+        var counter = [];
+
+        for (i = 0; i < countersQuantity; i++) {
+        counter[i] = parseInt(counters[i].innerHTML);
+        }
+
+        var count = function(start, value, id) {
+        var localStart = start;
+        setInterval(function() {
+            if (localStart < value) {
+            localStart++;
+            counters[id].innerHTML = localStart;
+            }
+        }, 40);
+        }
+
+        for (j = 0; j < countersQuantity; j++) {
+        count(0, counter[j], j);
+        }
+        });
+
+    </script>
+    <script>
+      var barChartData = {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+      datasets: [
+        {
+          label: "#E4ECF7",
+          backgroundColor: "#E4ECF7",
+          borderWidth: 1,
+          barThickness: 10,
+          borderRadius: {
+            topLeft: 10,
+            topRight: 10,
+            bottomLeft: 0,
+            bottomRight: 0
+          },
+          data: [3, 5, 6, 7, 3, 5, 6, 7]
+        },
+        {
+          label: "#0087A0",
+          backgroundColor: "#0087A0",
+          borderWidth: 1,
+          barThickness: 10,
+          borderRadius: {
+            topLeft: 10,
+            topRight: 10,
+            bottomLeft: 0,
+            bottomRight: 0
+          },
+          data: [4, 7, 3, 6, 10, 7, 4, 6]
+        },
+        {
+          label: "#FFB04B",
+          backgroundColor: "#FFB04B",
+          borderWidth: 1,
+          barThickness: 10,
+          borderRadius: {
+            topLeft: 10,
+            topRight: 10,
+            bottomLeft: 0,
+            bottomRight: 0
+          },
+          data: [10, 7, 4, 6, 9, 7, 3, 10]
+        }
+      ]
+    };
+
+    var chartOptions = {
+      responsive: true,
+      legend: {
+        position: "top"
+      },
+      title: {
+        display: true,
+        text: "Chart.js Bar Chart"
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    };
+
+    // Gap added for readability
+    window.onload = function() {
+      var ctx = document.getElementById("canvas").getContext("2d");
+      window.myBar = new Chart(ctx, {
+        type: "bar",
+        data: barChartData,
+        options: chartOptions
+      });
+    };
+
+
+    </script>
+    </body>
+</html>
