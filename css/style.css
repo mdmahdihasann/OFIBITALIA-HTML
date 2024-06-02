@@ -27,7 +27,8 @@ body {
     font-family: var(--Lexend);
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
-	background-color: #DFF1F4;
+	/* background-color: #DFF1F4; */
+	background-color: #F7F8FA;
 }
 img{
     width: 100%;
@@ -64,14 +65,13 @@ p {
 }
 
 /* common class */
-.common-btn {
-	padding: 1.2rem 3.5rem;
-	font-size: 1.5rem;
-	line-height: 2.2rem;
-	background-color: var(--primary-color);
+
+.common_btn a {
+	background: var(--secondary-color);
+	font-size: 1.4rem;
 }
-.common-btn:hover{
-	background-color: var(--primary-two-color);
+.common_btn a:hover{
+	background-color: var(--primary-color);
 }
 /* common css end */
 #login .input-pass-container input {
@@ -81,7 +81,7 @@ p {
 	transition: .6s;
 }
 #login .input-pass-container input:hover {
-	border: 1px solid var(--primary-color);
+	border: .1rem solid var(--primary-color);
 }
 #login .input-pass-container .fa-lock,.fa-user,.fa-envelope,.fa-phone {
 	position: absolute;
@@ -177,7 +177,7 @@ p {
 	display: none !important;
 }
 .header_serach_bar i {
-	font-size: 14px;
+	font-size: 1.4rem;
 	margin-right: .8rem;
 	color: var(--p-color);
 }
@@ -193,11 +193,11 @@ p {
 	border-radius: .5rem;
 }
 .image_dropdown img {
-	width: 30px !important;
+	width: 3rem !important;
 	border-radius: 50%;
 }
 
-#dashboard_section{
+#dashboard_section ,#lesson_library_section ,#laravel1_italian{
 	padding: 4rem 0;
 }
 .profile_main img {
@@ -226,13 +226,7 @@ p {
 	padding: 1rem 0;
 	border-radius: .5rem;
 }
-.common_btn a {
-	background: var(--secondary-color);
-	font-size: 1.4rem;
-}
-.common_btn a:hover{
-	background-color: var(--primary-color);
-}
+
 .profile_chart {
 	border: .1rem solid var(--border-light);
 	padding: 1.5rem;
@@ -248,8 +242,8 @@ p {
 	background: #0088a034;
 	color: var(--primary-color);
 	padding: 1.5rem;
-	width: 48px;
-	height: 48px;
+	width: 4.8rem;
+	height: 4.8rem;
 	text-align: center;
 }
 .sim_card_icon i {
@@ -277,7 +271,7 @@ p {
 	color: var(--p-color);
 }
 
-.profile_view_chart_heading h5{
+.profile_view_chart_heading h5 ,.library_label,.card-title{
 	font-size: 1.8rem;
 	line-height: 2.8rem;
 	color: var(--black-color);
@@ -329,24 +323,28 @@ p {
 	line-height: 2.6rem;
 	color: var(--red);
 }
-.progress_lesson_btn{
+.progress_lesson_btn a{
 	background-color: var(--secondary-color);
 	border: .2rem solid var(--secondary-color);
 	transition: ease-in-out .6s;
 }
-.progress_lesson_btn:hover{
+.progress_lesson_btn a:hover{
 	background-color: var(--primary-color);
 	border-color: var(--primary-color);
 }
-.progress_complete_btn{
+.progress_complete_btn a{
 	border: .2rem solid var(--primary-color);
 	color: var(--black-color);
 	transition: ease-in-out .6s;
 }
-.progress_complete_btn:hover{
+.progress_complete_btn a:hover{
 	background-color: var(--primary-color) !important;
 	border-color: var(--primary-color);
 	color: var(--white);
+}
+.feature_lesson_btn a{
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
 }
 .progress_bar_main{
 	background: linear-gradient(to bottom, #FFFFFF, #FFF4E5);
@@ -391,7 +389,9 @@ p {
 .feature_vocabulary_heading h5{
 	font-size: 1.5rem;
 }
-
+.feature_vocabulary_btn a{
+	font-size: 1.4rem;
+}
 /* dasboard css end */
 /* footer css start */
 #footer_section{
@@ -409,3 +409,220 @@ p {
 	text-align: end;
 }
 /* footer css end */
+
+
+/* lesson library pages css start */
+#lesson_library_section .lesson_library_img{
+	border: .1rem dotted var(--primary-color);
+}
+#library_filed {
+	font-size: 1.4rem;
+	padding: 1rem;
+	color: var(--primary-color);
+	border: .1rem solid var(--primary-color);
+}
+#lesson_library_section .search-bar {
+	background-color: #f8f5f2;
+	
+}
+#lesson_library_section .search-input {
+	border: none;
+	box-shadow: none;
+	flex-grow: 1;
+}
+#lesson_library_section .search-button {
+	font-size: 1.4rem;
+	background-color: var(--primary-color);
+	transition: ease-in-out .6s;
+}
+#lesson_library_section .search-button:hover{
+	background-color: var(--secondary-color);
+}
+#lesson_library_section .lesson_library_border {
+	border: 1px solid #0088a038;
+}
+
+#lesson_library_section .custom-control-label {
+	font-size: 1.4rem;
+	color: var(--black-color);
+	background: #0088a028;
+	padding: 1rem;
+	border-left: .5rem solid var(--primary-color);
+	border-radius: .4rem;
+}
+
+#lesson_library_section .common_box img {
+	width: 6rem;
+}
+#laravel1_top_bix .common_box img {
+	width: 6rem;
+}
+#lesson_library_section .lesson_library_img img {
+	width: 4rem;
+}
+/* lesson library css end */
+/* laravel 1 italian css start */
+#breadcrumb{
+	background-color: var(--black-color);
+}
+#breadcrumb .breadcrumb-item{
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+#breadcrumb .breadcrumb-item a{
+	color: var(--bg-color);
+}
+#breadcrumb .breadcrumb-item.active{
+	color: var(--secondary-color);
+}
+#breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+	color: var(--bg-color);
+}
+#laravel1_italian .laravel_audio_lesson a{
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+	color: var(--primary-color);
+	background-color: #0088a024;
+	padding: 1.3rem;
+}
+#laravel1_italian .laravel_video_lesson a{
+	background-color: #ffc67055;
+	color: var(--secondary-color);
+}
+#laravel1_italian .laravel_vocabulary_lesson a{
+	background-color: rgba(255, 0, 0, 0.172);
+	color: var(--red);
+}
+#laravel1_italian .laravel_audio_lesson a{
+	width: 100%;
+}
+#laravel1_italian .multi_choice_box{
+	color: var(--secondary-color);
+}
+#laravel1_italian .laravel_italian_btn a{
+	background-color: var(--primary-color);
+}
+#laravel1_italian .laravel_italian_main_box{
+	background: linear-gradient(to bottom, #FFFFFF, #FFF4E5);
+	border: .1rem solid #ff906b5a;
+	padding: 2rem;
+}
+#laravel1_italian .laravel_audio_lesson a {
+	border-radius: 5rem !important;
+}
+#laravel1_italian .laravel_audio_lesson a:hover {
+	background-color: var(--primary-color);
+	color: var(--white);
+	cursor: auto;
+}
+#laravel1_italian .laravel_italian_btn a:hover{
+	background-color: var(--primary-two-color);
+}
+#laravel1_italian .laravel1_it_box h4 {
+	font-size: 2rem;
+	line-height: 3rem;
+	background-color: #0088a03d;
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	color: var(--primary-color);
+	z-index: 1; 
+  }
+  
+  #laravel1_italian .laravael1_step::after {
+	content: '';
+	position: absolute;
+	top: 100%; 
+	left: 50%;
+	width: .4rem;
+	background-color: #DFF1F4;
+	height: 6.5rem;
+	transform: translateX(-50%);
+	z-index: 0; 
+  }
+.laravel1_contact {
+	border-bottom: .1rem dashed var(--red);
+}
+
+/* laravel 1 italian css end */
+/* newst lesson css start */
+#newest_lesson .newest_lesson_img img{
+	width: 4rem;
+}
+#newest_lesson .newest_box_img img{
+	width: 6rem;
+}
+.newst_lesson_btn i {
+	background-color: var(--primary-color) !important; 
+	padding: 1.5rem;
+	border-radius: 5rem;
+	color: var(--white);
+	border-color: var(--primary-color) !important;
+}
+.newst_lesson_btn i:hover {
+	background-color: var(--secondary-color) !important;
+	border-color: var(--secondary-color) !important;
+}
+.newst_lesson_btn i{
+	font-size: 1.8rem;
+}
+/* #laravel1_italian {
+	background-color: #F7F8FA;
+}
+#all_contact {
+	background-color: #F7F8FA;
+} */
+/* newst lesson css end */
+
+.contact_border{
+	border-bottom: .1rem dashed var(--primary-color);
+}
+#laravel1_top_bix {
+	
+	background: #DFF1F4;
+}
+/*follow css start  */
+.common_vocavulary_img{
+	display: inline-block;
+	border: .1rem dashed var(--primary-color);
+	border-radius: 50%;
+	padding: 1.5rem;
+}
+.common_vocavulary_img img{
+	width: 5rem;
+	
+}
+.common_vocavulary_box h4{
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	color: var(--black-color);
+}
+.common_vocavulary_box span{
+	color: var(--primary-color);
+}
+/* follow css end */
+/* vocabulary  css start */
+#vocabulary_section{
+	background-color: #DFF1F4;
+}
+#vocabulary_section .common_box img {
+	width: 6rem;
+}
+
+#vocabulary_section .vocabulary_btn a {
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+}
+#vocabulary_section .add_new {
+	color: var(--primary-two-color);
+}
+#vocabulary_section .add_setting {
+	color: var(--primary-color);
+}
+#vocabulary_section .add_comment {
+	color: var(--secondary-color);
+}
+#vocabulary_section .add_delete {
+	color: var(--red);
+}
+/* vocabulary  css end */

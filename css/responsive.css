@@ -22,10 +22,12 @@
     .form-switch{
         padding: 1.5rem 0 !important;
     }
-    .progress_btn{
-        margin-top: 2.5rem;
+    .feature_res_btn a{
+        width: 100% !important;
     }
-    
+    .feature_vocabulary_btn a{
+        padding: .8rem 0  !important;
+    }
     .duration_box,.audio_box,.progress_btn{
         text-align: center !important;
     }
@@ -48,6 +50,79 @@
     .navbar-brand img {
         width: 12rem !important;
     }
+    .beginner_option {
+        padding: .5rem 0 !important;
+    }
+    .common_btn a {
+        font-size: 1.2rem !important;
+        padding: .8rem 0 !important;
+    }
+    .common-btn {
+        width: 100% !important;
+        text-align: center;
+    }
+    .profile_view_chart_heading h5, .library_label {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+    .profile_heading ,.common_vocavulary_box h4 {
+        font-size: 1.8rem !important;
+        line-height: 2.7rem !important;
+    }
+    .widget-item h2 {
+        font-size: 2.6rem !important;
+        line-height: 3.2rem !important;
+    }
+    .res_pad{
+        padding: 2rem 1rem !important;
+    }
+    .profile_main img {
+        width: 10rem !important;
+    }
+    .common_box_heading h5 {
+        font-size: 1.5rem !important;
+    }
+    .feature_lesson_btn a {
+        padding: .8rem 4rem !important;
+      }
+      .feature_lesson_box_main, .progress_bar_main_level2 {
+        padding: 2rem 1rem !important;
+    }
+    .common_box {
+        justify-content: center;
+    }
+    .lesson_library_img img {
+        width: 3.6rem;
+    }
+    #library_lavel_main {
+        margin-top: 2rem;
+    }
+    .common_img_posi{
+        display: block !important;
+        text-align: center !important;
+    }
+    .laravael1_step::after {
+        top: 99% !important;
+        height: 13.9rem !important;
+    }
+    .newst_lesson_btn {
+        padding: 1.3rem !important;
+    }
+    #newest_lesson .newest_box_img img{
+        margin-bottom: 1rem !important;
+    }
+    .newest_justify{
+        justify-content: center !important;
+    }
+    #laravel1_italian .laravel_audio_lesson a {
+        font-size: 1.2rem !important;
+        padding: .6rem !important;
+    }
+    .vocabulary_btn{
+        display: block !important;
+        text-align: center !important;
+    }
+   
  }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -64,9 +139,9 @@
     .profile_view_chart_main{
         text-align: center !important;
     }
-    .progress_btn{
+    /* .progress_btn{
         margin-top: 2.5rem;
-    }
+    } */
     .duration_box,.audio_box,.progress_btn{
         text-align: center !important;
     }
@@ -79,15 +154,35 @@
     .navbar-brand img {
         width: 12rem !important;
     }
+    .common_img_posi{
+        display: block !important;
+        text-align: center !important;
+    }
+    #library_lavel_main {
+        margin-top: 1.5rem !important;
+    }
+    .common_box img {
+        width: 4rem !important;
+    }
+    .laravael1_step::after {
+        height: 14.4rem !important;
+    }
+    .newest_justify{
+        justify-content: center !important;
+    }
+    .vocabulary_btn{
+        justify-content: center !important;
+    }
  }
 /* // Medium devices (tablets, less than 992px) */
 @media(min-width: 767.98px) and (max-width: 991.98px) { 
-    .progress_btn{
+    /* .progress_btn{
         margin-top: 1.5rem !important;
-    }
+    } */
     .progress_bar_main {
         padding: 2.5rem !important;
     }
+    
  }
 
 /* // Large devices (desktops, less than 1200px) */
